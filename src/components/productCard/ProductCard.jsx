@@ -1,5 +1,6 @@
 
 import Image from '../images/image.jsx';
+import Button from '../UI/Button.jsx';
 const ProductCard = ()=>{
     return (
         <div className="border rounded-md p-2 flex flex-col  h-fit">
@@ -28,9 +29,9 @@ const ProductCard = ()=>{
                 />
             </div>
 
-            <div className="flex justify-between space-x-2 my-2">
-                <button className="bg-indigo-500 p-3 w-full rounded-md text-lg font-bold">EDIT</button>
-                <button className="bg-red-500 p-3 w-full rounded-md text-lg font-bold">DELETE</button>
+            <div className="flex justify-between items-center space-x-2 my-2">
+                <Button className="bg-indigo-500 ">EDIT</Button>
+                <Button className="bg-red-500 p-3 w-full rounded-md text-lg font-bold items-center">DELETE</Button>
             </div>
              
         </div>
