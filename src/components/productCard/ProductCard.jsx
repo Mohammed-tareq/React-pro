@@ -30,8 +30,8 @@ const ProductCard = ()=>{
             </div>
 
             <div className="flex justify-between items-center space-x-2 my-2">
-                <Button className="bg-indigo-500 ">EDIT</Button>
-                <Button className="bg-red-500 p-3 w-full rounded-md text-lg font-bold items-center">DELETE</Button>
+                <Button className="bg-indigo-500" width="w-full">EDIT</Button>
+                <Button className="bg-red-500" width="w-full">DELETE</Button>
             </div>
              
         </div>

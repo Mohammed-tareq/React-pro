@@ -1,8 +1,10 @@
-
-
-const Button = (props)=>{
+const Button = (props) => {
     return (
-<button className={`${props.className} p-3 w-full rounded-md text-lg font-bold items-center`}> {props.children}</button>
+        <button
+            className={`${props.className} ${props.width} p-3  rounded-md text-lg font-bold items-center`}
+            onClick={props.onClick}>
+            {props.children}
+        </button>
     );
-}
- export default Button;
+};
+export default Button;
