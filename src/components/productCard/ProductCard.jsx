@@ -9,7 +9,7 @@ const ProductCard = ()=>{
             <h2>Product name</h2>
             <p className="text-gray-500">Product description goes here. It should be brief and informative.</p>
 
-            <div className="flex my-3.5">
+            <div className="flex my-3.5 space-x-2">
             <span className= "w-5 h-5 bg-red-500 rounded-full" />
             <span className= "w-5 h-5 bg-yellow-500 rounded-full" />
             <span className= "w-5 h-5 bg-blue-500 rounded-full" />
