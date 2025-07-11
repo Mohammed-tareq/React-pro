@@ -31,8 +31,8 @@ const ProductCard = (props)=>{
             </div>
 
             <div className="flex justify-between items-center space-x-2 my-2">
-                <Button className="bg-indigo-500" width="w-full">EDIT</Button>
-                <Button className="bg-red-500" width="w-full">DELETE</Button>
+                <Button className="bg-indigo-500 hover:bg-indigo-800" width="w-full">EDIT</Button>
+                <Button className="bg-red-500 hover:bg-red-800" width="w-full">DELETE</Button>
             </div>
              
         </div>
