@@ -5,7 +5,7 @@ import { handelTxt } from '../../utils/functions.js';
 const ProductCard = (props)=>{
      const { product } = props;
     return (
-        <div className="border rounded-md p-2 flex flex-col  h-fit">
+        <div className="border rounded-md p-2 flex flex-col  h-fit max-w-sm md:max-w-lg mx-auto md:mx-0 ">
 
             <Image
               className="w-full h-60"
