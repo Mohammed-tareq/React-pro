@@ -21,6 +21,22 @@ function App() {
     <ProductCard key={product.id} product={product} />
   ));
 
+  const [newProduct, setNewProduct] = useState({
+    id: "",
+    name: "",
+    price: "",
+    image: "",
+    description: "",
+  
+  });
+  const onChangeHandler = (e) => {
+    const { name, value } = e.target;
+    setNewProduct((product) => ({
+      ...product,
+      [name]: value,
+    }));
+  };
+
   const formInputList = formInputsList.map((input) => (
   <div className="flex flex-col mt-1" >
     <label htmlFor={input.id}>{input.label}</label>
@@ -29,6 +45,8 @@ function App() {
       id={input.id}
       name={input.name}
       type={input.type}
+      value={newProduct[`${input.name}`]}
+      onChange={onChangeHandler}
     />
   </div>
   ));
@@ -42,7 +60,7 @@ function App() {
           width="w-fit"
           onClick={open}
         >
-          Add New Product
+          ADD NEW PRODUCT
         </Button>
       </div>
 

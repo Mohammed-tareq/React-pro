@@ -1,8 +1,8 @@
+import { InputHTMLAttributes } from "react";
+const Input = (props) => {
 
-const Input = (props)=>{
-    
-   return <input  {...props} />
-   
+    return <input  {...props} />
+
 
 }
 
