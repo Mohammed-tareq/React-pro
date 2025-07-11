@@ -45,7 +45,7 @@ function App() {
       id={input.id}
       name={input.name}
       type={input.type}
-      value={newProduct[`${input.name}`]}
+      value={newProduct[input.name]}
       onChange={onChangeHandler}
     />
   </div>
