@@ -22,12 +22,11 @@ const ProductCard = (props)=>{
             </div>
 
             <div className="flex items-center justify-between">
-                <span>$100</span>
+                <span>${product.price}</span>
                 <Image
                 className={"w-10 h-10 rounded-full"}
-                src={"https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg"}
-                alt={"product name"}
-                
+                src={product.category.imageURL}
+                alt={product.category.name}
                 />
             </div>
 
