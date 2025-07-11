@@ -1,17 +1,18 @@
 
 import Image from '../images/image.jsx';
 import Button from '../UI/Button.jsx';
-const ProductCard = ()=>{
+const ProductCard = (props)=>{
+     const { product } = props;
     return (
         <div className="border rounded-md p-2 flex flex-col  h-fit">
 
             <Image
               className="w-full h-60"
-              src="https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg"
-              alt={"product name"}
+              src={product.imageURL}
+              alt={product.title}
             />
-            <h2>Product name</h2>
-            <p className="text-gray-500">Product description goes here. It should be brief and informative.</p>
+            <h2>{product.title}</h2>
+            <p className="text-gray-500">{product.description}</p>
 
             <div className="flex my-3.5 space-x-2">
             <span className= "w-5 h-5 bg-red-500 rounded-full" />
