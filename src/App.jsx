@@ -1,6 +1,6 @@
 import './App.css'
 import ProductCard from './components/productCard/ProductCard'
-import { productList } from '../data/data.js'
+import { productList } from './data/data.js'
 
 function App() {
 

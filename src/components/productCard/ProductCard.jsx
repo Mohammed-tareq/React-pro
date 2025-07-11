@@ -1,6 +1,7 @@
 
 import Image from '../images/image.jsx';
 import Button from '../UI/Button.jsx';
+import { handelTxt } from '../../utils/functions.js';
 const ProductCard = (props)=>{
      const { product } = props;
     return (
@@ -12,7 +13,7 @@ const ProductCard = (props)=>{
               alt={product.title}
             />
             <h2>{product.title}</h2>
-            <p className="text-gray-500">{product.description}</p>
+            <p className="text-gray-500">{handelTxt(product.description)}</p>
 
             <div className="flex my-3.5 space-x-2">
             <span className= "w-5 h-5 bg-red-500 rounded-full" />
